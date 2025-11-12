@@ -7,7 +7,7 @@ class WordFrequencies:
         # Runtime Complexity: O(n)
 
         try:
-            with open(text_file_path, "r") as token_file:
+            with open(text_file_path, "r", encoding = "utf-8") as token_file:
                 file_contents = token_file.read()
         except Exception as e:
             print(f'ERROR: File does not exist: {e}')
